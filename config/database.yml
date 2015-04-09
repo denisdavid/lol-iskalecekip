@@ -8,30 +8,12 @@
 
 development:
   adapter: postgresql
-  encoding: utf8
-  database: LOL-Iskalec_Ekip
+  encoding: unicode
+  database: d9pg3k6n2ur84e
   pool: 5
-  username: 
-  password:
+  username: getwdprlalhplp
+  password: BpIxJRThb5_OdKb24Xnx8PmVnk
+  host: ec2-23-21-73-32.compute-1.amazonaws.com
+  port: 5432
 
-# Warning: The database defined as "test" will be erased and
-# re-generated from your development database when you run "rake".
-# Do not set this db to the same as development or production.
-test: &TEST
-  adapter: postgresql
-  encoding: utf8
-  database: LOL-Iskalec_Ekip
-  pool: 5
-  username: 
-  password:
 
-production:
-  adapter: postgresql
-  encoding: utf8
-  database: LOL-Iskalec_Ekip
-  pool: 5
-  username: 
-  password:
-
-cucumber:
-  <<: *TEST
