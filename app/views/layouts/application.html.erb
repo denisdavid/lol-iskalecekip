@@ -7,6 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<p><%= link_to "Domov", root_path %>
+<%= link_to "Najdi Ekipo", root_path %>
+<%= link_to "Najdi Igralca", root_path %>
+<%= link_to "Kontakt", root_path %> </p>
+
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
 <% end %>
@@ -22,6 +28,8 @@
   <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
   <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
 <% end %>
+
+
 <%= yield %>
 
 </body>
