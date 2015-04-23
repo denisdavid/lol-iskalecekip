@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'welcome/domov'
+
+  get 'welcome/najdi_ekipo'
+
+  get 'welcome/najdi_igralca'
+
+  get 'welcome/kontakt'
+
   devise_for :users
   root 'welcome#index'
   resources :posts
