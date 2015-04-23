@@ -8,10 +8,14 @@
 </head>
 <body>
 
-<p><%= link_to "Domov", root_path %>
-<%= link_to "Najdi Ekipo", welcome_najdi_ekipo_path %>
-<%= link_to "Najdi Igralca", welcome_najdi_igralca_path %>
-<%= link_to "Kontakt", welcome_kontakt_path %> </p>
+<div class="container">
+  <ul class="nav nav-tabs">
+    <p><li><%= link_to "Domov", root_path %></li>
+    <li><%= link_to "Najdi Ekipo", welcome_najdi_ekipo_path %></li>
+    <li><%= link_to "Najdi Igralca", welcome_najdi_igralca_path %></li>
+    <li><%= link_to "Kontakt", welcome_kontakt_path %></li> </p>
+  </ul>
+
 
 <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
@@ -31,6 +35,8 @@
 
 
 <%= yield %>
+
+
 
 </body>
 </html>
