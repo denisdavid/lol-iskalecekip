@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  zacetek_iskanja: 2015-04-23 13:33:05
+  nickname: MyString
+  server: MyString
+  main_role: MyString
+  secondary_role: MyString
+  ime_priimek: MyString
+  favourite_champion: MyString
+
+two:
+  zacetek_iskanja: 2015-04-23 13:33:05
+  nickname: MyString
+  server: MyString
+  main_role: MyString
+  secondary_role: MyString
+  ime_priimek: MyString
+  favourite_champion: MyString

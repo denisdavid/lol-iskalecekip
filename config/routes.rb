@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :players
   get 'welcome/domov'
 
   get 'welcome/najdi_ekipo'

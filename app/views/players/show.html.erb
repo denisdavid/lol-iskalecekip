@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Zacetek iskanja:</strong>
+  <%= @player.zacetek_iskanja %>
+</p>
+
+<p>
+  <strong>Nickname:</strong>
+  <%= @player.nickname %>
+</p>
+
+<p>
+  <strong>Server:</strong>
+  <%= @player.server %>
+</p>
+
+<p>
+  <strong>Main role:</strong>
+  <%= @player.main_role %>
+</p>
+
+<p>
+  <strong>Secondary role:</strong>
+  <%= @player.secondary_role %>
+</p>
+
+<p>
+  <strong>Ime priimek:</strong>
+  <%= @player.ime_priimek %>
+</p>
+
+<p>
+  <strong>Favourite champion:</strong>
+  <%= @player.favourite_champion %>
+</p>
+
+<%= link_to 'Edit', edit_player_path(@player) %> |
+<%= link_to 'Back', players_path %>
