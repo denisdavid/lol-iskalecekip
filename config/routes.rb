@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   get 'welcome/kontakt'
 
+
   devise_for :users
   root 'welcome#index'
   resources :posts
