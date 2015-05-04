@@ -1,19 +1,21 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Teams</h1>
+<h1>Teams</h1>
+<div class="media">
+  <div class="media-body">
 
-<table>
+<table class="table table-hover">
   <thead>
     <tr>
-      <th>Zacetek iskanja</th>
-      <th>Team name</th>
-      <th>Server</th>
-      <th>Top</th>
-      <th>Jungle</th>
-      <th>Mid</th>
-      <th>Adc</th>
-      <th>Support</th>
-      <th>IÜŔemo</th>
+      <th id="table_title">Zacetek iskanja</th>
+      <th id="table_title">Team name</th>
+      <th id="table_title">Server</th>
+      <th id="table_title">Top</th>
+      <th id="table_title">Jungle</th>
+      <th id="table_title">Mid</th>
+      <th id="table_title">Adc</th>
+      <th id="table_title">Support</th>
+      <th id="table_title">Iscemo</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -30,13 +32,15 @@
         <td><%= team.Adc %></td>
         <td><%= team.Support %></td>
         <td><%= team.IÜŔemo %></td>
-        <td><%= link_to 'Show', team %></td>
-        <td><%= link_to 'Edit', edit_team_path(team) %></td>
-        <td><%= link_to 'Destroy', team, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', team, class: 'btn btn-mini' %></td>
+        <td><%= link_to 'Edit', edit_team_path(team), class: 'btn btn-mini btn-success' %></td>
+        <td><%= link_to 'Destroy', team, method: :delete, class: 'btn btn-mini btn-danger', data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
-  </tbody>
-</table>
+   </tbody>
+  </table>
+ </div>
+</div>
 
 <br>
 
