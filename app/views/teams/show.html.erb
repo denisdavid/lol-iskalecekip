@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Zacetek iskanja:</strong>
+  <%= @team.Zacetek_iskanja %>
+</p>
+
+<p>
+  <strong>Team name:</strong>
+  <%= @team.Team_name %>
+</p>
+
+<p>
+  <strong>Server:</strong>
+  <%= @team.Server %>
+</p>
+
+<p>
+  <strong>Top:</strong>
+  <%= @team.Top %>
+</p>
+
+<p>
+  <strong>Jungle:</strong>
+  <%= @team.Jungle %>
+</p>
+
+<p>
+  <strong>Mid:</strong>
+  <%= @team.Mid %>
+</p>
+
+<p>
+  <strong>Adc:</strong>
+  <%= @team.Adc %>
+</p>
+
+<p>
+  <strong>Support:</strong>
+  <%= @team.Support %>
+</p>
+
+<p>
+  <strong>IÜŔemo:</strong>
+  <%= @team.IÜŔemo %>
+</p>
+
+<%= link_to 'Edit', edit_team_path(@team) %> |
+<%= link_to 'Back', teams_path %>

@@ -1,0 +1,53 @@
+<%= form_for(@team) do |f| %>
+  <% if @team.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@team.errors.count, "error") %> prohibited this team from being saved:</h2>
+
+      <ul>
+      <% @team.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Zacetek_iskanja %><br>
+    <%= f.datetime_select :Zacetek_iskanja %>
+  </div>
+  <div class="field">
+    <%= f.label :Team_name %><br>
+    <%= f.text_field :Team_name %>
+  </div>
+  <div class="field">
+    <%= f.label :Server %><br>
+    <%= f.text_field :Server %>
+  </div>
+  <div class="field">
+    <%= f.label :Top %><br>
+    <%= f.text_field :Top %>
+  </div>
+  <div class="field">
+    <%= f.label :Jungle %><br>
+    <%= f.text_field :Jungle %>
+  </div>
+  <div class="field">
+    <%= f.label :Mid %><br>
+    <%= f.text_field :Mid %>
+  </div>
+  <div class="field">
+    <%= f.label :Adc %><br>
+    <%= f.text_field :Adc %>
+  </div>
+  <div class="field">
+    <%= f.label :Support %><br>
+    <%= f.text_field :Support %>
+  </div>
+  <div class="field">
+    <%= f.label :IÜŔemo %><br>
+    <%= f.text_field :IÜŔemo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
