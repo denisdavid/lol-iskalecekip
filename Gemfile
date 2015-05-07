@@ -14,6 +14,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+
 gem 'devise'
 
 # Use jquery as the JavaScript library
@@ -39,3 +40,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rails_12factor', group: :production
 
 gem 'bootstrap-sass', '~> 2.3.1.0'
+
+gem 'rails_admin'
+
+
