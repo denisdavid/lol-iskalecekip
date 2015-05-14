@@ -35,5 +35,10 @@
   <%= @player.favourite_champion %>
 </p>
 
+<p>
+  <strong>picture:</strong>
+  <%= image_tag(@player.picture_url, :width => 200) if @player.picture.present? %>
+</p>
+
 <%= link_to 'Edit', edit_player_path(@player) %> |
 <%= link_to 'Back', players_path %>
